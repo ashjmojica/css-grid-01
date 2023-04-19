@@ -1,22 +1,18 @@
-.grid-box {
-  height: 100px;
-  width: 100%;
-  border: 2px solid black;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 100px;
   grid-template-rows: auto;
-  grid-template-areas: "header header header header"
-  "nav upper-content-left"
-  "nav sticky-footer"
-  ""
-  "";
+  grid-template-areas:
+    "header header header header"
+    "nav ucLeft ucCenter ucRight"
+    "nav midContent midContent midContent"
+    "nav lowerCon2 lowerCon2 lowerCon2"
+    "footer footer footer footer";
   gap: 3px;
 }
 
 .header {
+  grid-area: header;
   border: 2px solid black;
   height: 30px;
   background-color: rgb(211, 207, 207);
@@ -24,51 +20,54 @@
 }
 
 .nav {
+  grid-area: nav;
   border: 2px solid black;
-  height: 40px;
+  height: 100%;
   background-color: tan;
   text-align: center;
 }
 
-.upper-content-left {
+.ucLeft {
+  grid-area: ucLeft;
   border: 2px solid black;
-  height: 40px;
+  height: 100px;
   background-color: rgb(108, 103, 103);
   text-align: center;
 }
 
-
-.upper-content-center {
+.ucCenter {
   border: 2px solid black;
-  height: 40px;
+  height: 100px;
   background-color: red;
   text-align: center;
 }
 
-
-.upper-content-right {
+.ucRight {
+  grid-area: ucRight;
   border: 2px solid black;
-  height: 40px;
+  height: 100px;
   background-color: rgb(211, 207, 207);
   text-align: center;
 }
 
-.middle-content {
+.midContent {
+  grid-area: midContent;
   border: 2px solid black;
-  height: 40px;
+  height: 100px;
   background-color: rgb(47, 157, 226);
   text-align: center;
 }
 
-.lower-content-2 {
+.lowerCon2 {
+  grid-area: lowerCon2;
   border: 2px solid black;
-  height: 40px;
+  height: 100px;
   background-color: orangered;
   text-align: center;
 }
 
-
-.sticky-footer {
+.footer {
+  grid-area: footer;
   border: 2px solid black;
   height: 40px;
   background-color: rgb(211, 207, 207);
