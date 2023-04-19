@@ -12,60 +12,51 @@
 }
 
 .header {
-  grid-area: header;
   border: 2px solid black;
-  height: 40px;
+  height: 30px;
   background-color: rgb(211, 207, 207);
 }
 
 .nav {
-    grid-area: nav;
   border: 2px solid black;
-  height: 100%;
-  width: 100%
+  height: 40px;
   background-color: tan;
 }
 
 .upper-content-left {
-grid-area: header;
   border: 2px solid black;
   height: 40px;
-  background-color: rgb(211, 207, 207);
+  background-color: rgb(108, 103, 103);
 }
 
 
 .upper-content-center {
-grid-area: header;
   border: 2px solid black;
   height: 40px;
-  background-color: rgb(211, 207, 207);
+  background-color: red;
 }
 
 
 .upper-content-right {
-grid-area: header;
   border: 2px solid black;
   height: 40px;
   background-color: rgb(211, 207, 207);
 }
 
 .middle-content {
-grid-area: header;
   border: 2px solid black;
   height: 40px;
-  background-color: rgb(211, 207, 207);
+  background-color: rgb(47, 157, 226);
 }
 
 .lower-content-2 {
-grid-area: header;
   border: 2px solid black;
   height: 40px;
-  background-color: rgb(211, 207, 207);
+  background-color: orangered;
 }
 
 
 .sticky-footer {
-grid-area: header;
   border: 2px solid black;
   height: 40px;
   background-color: rgb(211, 207, 207);
